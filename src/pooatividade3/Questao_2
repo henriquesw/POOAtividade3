@@ -1,0 +1,6 @@
+a) Pois todo carro é um veículo e como a classe Veiculo é classe mãe da classe
+Carro, qualquer objeto que for instanciado como carro poderá ser passado para
+qualquer metodo que receba um veículo como argumento.
+
+b) Não, porque uma moto é diferente de um carro, são classes distintas e nenhuma
+delas sao subclasses da outra.

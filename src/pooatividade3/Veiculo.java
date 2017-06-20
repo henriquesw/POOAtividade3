@@ -6,7 +6,21 @@ public class Veiculo {
     int numeroDeRodas;
     int numeroDePortas;
     int velocidadeAtual;
+    static int num;
+    private int id;
 
+    public Veiculo() {
+        this.id = ++num;
+    }
+
+    public static int getNum() {
+        return num;
+    }
+    
+    public int getId() {
+        return id;
+    }
+    
     public String getMarca() {
         return marca;
     }
@@ -35,12 +49,26 @@ public class Veiculo {
         return velocidadeAtual;
     }
 
+    public void setVelocidadeAtual(int velocidadeAtual) {
+        this.velocidadeAtual = velocidadeAtual;
+    }
+
     public void acelera(int velocidade) {
         this.velocidadeAtual = velocidade;
     }
 
     public void frear() {
         this.velocidadeAtual = 0;
+    }
+    
+    public void comparaVelocidade(Veiculo veiculo){
+        if (this.velocidadeAtual > veiculo.getVelocidadeAtual())
+            System.out.println("O veículo "+this.id+" está mais rápido.");
+        else
+            if (this.velocidadeAtual == veiculo.getVelocidadeAtual())
+                System.out.println("Os veículos possuem a mesma velocidade.");
+            else
+                System.out.println("O veículo "+veiculo.getId()+" está mais rápido.");
     }
     
 }

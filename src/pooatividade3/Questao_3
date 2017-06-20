@@ -1,0 +1,11 @@
+a) Ele nos dará a quantidade total de veículos que foram instanciados (a soma 
+dos carros, motos, caminhões e veículos).
+
+b) Sim, pois como ela é estática e todas as outras classes são subclasses de
+Veículo, todas tem acesso a essa variável como se ela fosse uma variável global.
+
+c) Pode e seria a mesma para as duas instâncias, pois o atributo num é estático,
+ou seja, possui o mesmo valor para todas as instâncias de um objeto então ela 
+sempre teria o valor correspondente a quantidade de objetos que foram instanciados.
+
+d) Sim, ele retorna o valor de num, que é 0 já que nenhum objeto foi instanciado. 

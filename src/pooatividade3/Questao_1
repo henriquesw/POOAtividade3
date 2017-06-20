@@ -1,0 +1,9 @@
+a) - Carro: marca, número de rodas, número de portas, velocidade atual e tamanho
+do porta malas.
+ - Moto: marca, número de rodas, número de portas, velocidade atual e bauleto.
+ - Caminhão: marca, número de rodas, número de portas, velocidade atual e carga 
+máxima.
+
+b) Não, pois para ser possível chamar o método getCargaMaxima ele deveria estar
+implementado na classe Veiculo, ou a classe Moto deveria estender a classe 
+Caminhão.
